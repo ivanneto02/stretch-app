@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ivanneto.zenflex.ui.login.LoginFragment"
+        android:label="@string/login_fragment_label"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.ivanneto.zenflex.WelcomeFragment"
+        android:label="@string/welcome_fragment_label"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseItemFragment2"
+        android:name="com.ivanneto.zenflex.ExerciseItemFragment"
+        android:label="@string/exercise_item_fragment_label"
+        tools:layout="@layout/fragment_item_list" >
+        <action
+            android:id="@+id/action_exerciseItemFragment2_to_exerciseParametersFragment"
+            app:destination="@id/exerciseParametersFragment" />
+        <action
+            android:id="@+id/action_exerciseItemFragment2_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseParametersFragment"
+        android:name="com.ivanneto.zenflex.ExerciseParametersFragment"
+        android:label="@string/exercise_fragment_label"
+        tools:layout="@layout/fragment_exercise_parameters" >
+        <action
+            android:id="@+id/action_exerciseParametersFragment_to_exerciseFragment2"
+            app:destination="@id/exerciseFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/exerciseFragment2"
+        android:name="com.ivanneto.zenflex.ExerciseFragment"
+        android:label="@string/exercise_fragment_label"
+        tools:layout="@layout/fragment_exercise" >
+        <action
+            android:id="@+id/action_exerciseFragment2_to_exerciseItemFragment2"
+            app:destination="@id/exerciseItemFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.ivanneto.zenflex.SettingsFragment"
+        android:label="@string/settings_fragment_label" >
+        <action
+            android:id="@+id/action_settingsFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.ivanneto.zenflex.MenuFragment"
+        android:label="@string/menu_fragment_label"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_exerciseItemFragment2"
+            app:destination="@id/exerciseItemFragment2" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_authorFragment"
+            app:destination="@id/authorFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_notesItemFragment"
+            app:destination="@id/notesItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorFragment"
+        android:name="com.ivanneto.zenflex.AuthorFragment"
+        android:label="@string/author_fragment_label"
+        tools:layout="@layout/fragment_author" >
+        <action
+            android:id="@+id/action_authorFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.ivanneto.zenflex.NotesFragment"
+        android:label="@string/notes_fragment"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_notesItemFragment"
+            app:destination="@id/notesItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesItemFragment"
+        android:name="com.ivanneto.zenflex.NotesItemFragment"
+        android:label="@string/notes_item_fragment_label"
+        tools:layout="@layout/fragment_notes_item_list" >
+        <action
+            android:id="@+id/action_notesItemFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_notesItemFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+</navigation>

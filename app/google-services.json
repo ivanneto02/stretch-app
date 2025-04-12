@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "575323466692",
+    "project_id": "zenflex-be339",
+    "storage_bucket": "zenflex-be339.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575323466692:android:dfeb50d88e1e19128c9291",
+        "android_client_info": {
+          "package_name": "com.ivanneto.zenflex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575323466692-v3npo5lo1ajgi5hfkecee6np6gmiacdn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ivanneto.zenflex",
+            "certificate_hash": "36241eba44fa99741e9b0e0a249a55abd1f7e8d4"
+          }
+        },
+        {
+          "client_id": "575323466692-f5c1s93rvus53c5n7fjhg0bfhqdu9fmj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-B-YkiBYmERVIzwDzT_FoCP_onv64FYE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575323466692-f5c1s93rvus53c5n7fjhg0bfhqdu9fmj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
