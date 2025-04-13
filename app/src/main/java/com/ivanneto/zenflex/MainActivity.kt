@@ -44,13 +44,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun handleCurrentUser(navController: NavController) {
-        val currentUser = auth.currentUser
-        if (currentUser != null) { // signed in
-            navController.navigate(R.id.action_welcomeFragment_to_menuFragment)
-        }
-        else { // Not signed in
-            // Do nothing, let the user move on to login fragment by themselves if they want to
-        }
+        // TODO: fix this function
+//        val currentUser = auth.currentUser
+//        if (currentUser != null) { // signed in
+//            navController.navigate(R.id.action_welcomeFragment_to_menuFragment)
+//        }
+//        else { // Not signed in
+//            // Do nothing, let the user move on to login fragment by themselves if they want to
+//        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

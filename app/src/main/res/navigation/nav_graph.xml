@@ -22,21 +22,15 @@
         <action
             android:id="@+id/action_welcomeFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_welcomeFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
-        android:id="@+id/exerciseItemFragment2"
+        android:id="@+id/exerciseItemFragment"
         android:name="com.ivanneto.zenflex.ExerciseItemFragment"
         android:label="@string/exercise_item_fragment_label"
         tools:layout="@layout/fragment_item_list" >
         <action
-            android:id="@+id/action_exerciseItemFragment2_to_exerciseParametersFragment"
+            android:id="@+id/action_exerciseItemFragment_to_exerciseParametersFragment"
             app:destination="@id/exerciseParametersFragment" />
-        <action
-            android:id="@+id/action_exerciseItemFragment2_to_menuFragment"
-            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/exerciseParametersFragment"
@@ -44,34 +38,30 @@
         android:label="@string/exercise_fragment_label"
         tools:layout="@layout/fragment_exercise_parameters" >
         <action
-            android:id="@+id/action_exerciseParametersFragment_to_exerciseFragment2"
-            app:destination="@id/exerciseFragment2" />
+            android:id="@+id/action_exerciseParametersFragment_to_exerciseFragment"
+            app:destination="@id/exerciseFragment" />
     </fragment>
     <fragment
-        android:id="@+id/exerciseFragment2"
+        android:id="@+id/exerciseFragment"
         android:name="com.ivanneto.zenflex.ExerciseFragment"
         android:label="@string/exercise_fragment_label"
         tools:layout="@layout/fragment_exercise" >
         <action
-            android:id="@+id/action_exerciseFragment2_to_exerciseItemFragment2"
-            app:destination="@id/exerciseItemFragment2" />
+            android:id="@+id/action_exerciseFragment_to_exerciseItemFragment"
+            app:destination="@id/exerciseItemFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
         android:name="com.ivanneto.zenflex.SettingsFragment"
-        android:label="@string/settings_fragment_label" >
-        <action
-            android:id="@+id/action_settingsFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
-    </fragment>
+        android:label="@string/settings_fragment_label" />
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.ivanneto.zenflex.MenuFragment"
         android:label="@string/menu_fragment_label"
         tools:layout="@layout/fragment_menu" >
         <action
-            android:id="@+id/action_menuFragment_to_exerciseItemFragment2"
-            app:destination="@id/exerciseItemFragment2" />
+            android:id="@+id/action_menuFragment_to_exerciseItemFragment"
+            app:destination="@id/exerciseItemFragment" />
         <action
             android:id="@+id/action_menuFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
@@ -79,30 +69,22 @@
             android:id="@+id/action_menuFragment_to_authorFragment"
             app:destination="@id/authorFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
             android:id="@+id/action_menuFragment_to_notesItemFragment"
             app:destination="@id/notesItemFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_donateFragment"
+            app:destination="@id/donateFragment" />
     </fragment>
     <fragment
         android:id="@+id/authorFragment"
         android:name="com.ivanneto.zenflex.AuthorFragment"
         android:label="@string/author_fragment_label"
-        tools:layout="@layout/fragment_author" >
-        <action
-            android:id="@+id/action_authorFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_author" />
     <fragment
         android:id="@+id/notesFragment"
         android:name="com.ivanneto.zenflex.NotesFragment"
         android:label="@string/notes_fragment"
-        tools:layout="@layout/fragment_notes" >
-        <action
-            android:id="@+id/action_notesFragment_to_notesItemFragment"
-            app:destination="@id/notesItemFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_notes" />
     <fragment
         android:id="@+id/notesItemFragment"
         android:name="com.ivanneto.zenflex.NotesItemFragment"
@@ -111,8 +93,10 @@
         <action
             android:id="@+id/action_notesItemFragment_to_notesFragment"
             app:destination="@id/notesFragment" />
-        <action
-            android:id="@+id/action_notesItemFragment_to_menuFragment"
-            app:destination="@id/menuFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/donateFragment"
+        android:name="com.ivanneto.zenflex.DonateFragment"
+        android:label="@string/donate_fragment_label"
+        tools:layout="@layout/fragment_donate" />
 </navigation>

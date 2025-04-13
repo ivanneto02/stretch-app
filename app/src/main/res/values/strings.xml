@@ -14,8 +14,10 @@
     <string name="exercise_item_fragment_label">Exercises</string>
     <string name="exercise_parameters_fragment_label">Parameters</string>
     <string name="exercise_fragment_label">Exercise</string>
+    <string name="donate_fragment_label">Donate</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="donate_fragment_donate_paypal_link">https://paypal.me/ivannetodev</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
